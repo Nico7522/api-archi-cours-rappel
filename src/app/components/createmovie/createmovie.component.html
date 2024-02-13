@@ -1,0 +1,29 @@
+<h3>Créer un film</h3>
+<form [formGroup]="movieForm">
+    <div>
+        <label for="title">Titre :</label>
+        <input type="text" formControlName="title">
+    </div>
+    <div>
+        <label for="releaseYear">Date de sortie : </label>
+        <input type="number" formControlName="releaseYear">
+    </div>
+    <div>
+        <label for="synopsis">Synopsis : </label>
+        <input type="text" formControlName="synopsis">
+
+    </div>
+
+    <h4>Réalisateur : </h4>
+    <div>
+        <label for="firstname">Nom : </label>
+        <input type="text" formControlName="firstname">
+
+    </div>
+    <div>
+        <label for="lastname">Prénom : </label>
+        <input type="text" formControlName="lastname">
+
+    </div>
+    <button type="submit" (click)="handleSubmit()">Créer le film</button>
+</form>

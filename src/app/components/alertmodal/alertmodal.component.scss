@@ -1,0 +1,32 @@
+.alert-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 500px;
+  border: 1px solid black;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: apparition;
+  animation-duration: 0.5s;
+  z-index: 10;
+}
+
+@keyframes apparition {
+  from {
+    margin-top: -1000px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

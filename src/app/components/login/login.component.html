@@ -1,0 +1,13 @@
+<h3>Login</h3>
+
+<p>Status de connexion : {{status}}</p>
+
+<div>
+    <p>Email :  <input type="email" [(ngModel)]="email"></p>
+    <p>Password :  <input type="password" [(ngModel)]="password"></p>
+
+</div>
+
+<button (click)="login()">Login</button>
+<!-- <button (click)="logout()">Logout</button> -->
+
